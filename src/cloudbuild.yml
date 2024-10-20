@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/notional-portal-439111-s2/kakeibo-remake', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/notional-portal-439111-s2/kakeibo-remake']
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['run', 'deploy', 'kakeibo-remake', '--image', 'gcr.io/notional-portal-439111-s2/kakeibo-remake', '--platform', 'managed', '--region', 'us-central1']

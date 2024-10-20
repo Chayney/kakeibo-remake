@@ -1,0 +1,66 @@
+.header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.parent-container {
+    display: flex;
+    width: 100%;
+}
+
+.child-container {
+    width: 50%;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border-bottom: solid 1px;
+}
+
+td {
+    width: 300px;
+}
+
+input {
+    width: 300px;
+}
+
+select {
+    width: 300px;
+}
+
+.flash_message {
+    background-color: aqua;
+    font-size: 20px;
+}
+
+.flash_error_message {
+    background-color: red;
+    font-size: 20px;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+}
+
+.pagination li {
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.pagination li a {
+    padding: 15px;
+    text-decoration: none;
+    background-color: mediumaquamarine;
+    opacity: 0.8;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.pagination li span {
+    padding: 15px;
+}
