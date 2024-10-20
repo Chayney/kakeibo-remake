@@ -1,7 +1,7 @@
 FROM composer:latest as build
 WORKDIR /app
 COPY . /app
-RUN composer install --no-interaction --no-progress --prefer-dist
+RUN composer install
 
 FROM php:7.4.9-apache
 WORKDIR /var/www/html
